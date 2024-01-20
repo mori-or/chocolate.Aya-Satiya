@@ -1,0 +1,84 @@
+.body {
+     text-align: center;
+}
+.main {
+     display: inline-block;
+     text-align: center;
+     max-width:100%;
+     width: auto;
+     justify-content: center;
+     background-color: rgba(0, 0, 0, 0.3);
+}
+
+.conteiner {
+     
+     display:inline-grid;
+     grid-template-columns: repeat(4, 1fr);
+     grid-template-rows: repeat(1, auto);
+     justify-content: center;
+     align-content: center;
+     gap: 15px;
+     margin: 0px 10px 10px 10px;
+}
+
+.card {
+     text-align: center;
+     display: inline-block;
+     background-color: rgba(0, 0, 0, 0.4);
+     width: auto;
+}
+.href{
+     text-decoration: none;
+     color: aliceblue;
+     font-size: 21px;
+     margin: 0 0px 0px 0px;
+     
+     white-space: nowrap; /* Текст не переносится */
+    overflow: hidden; /* Обрезаем всё за пределами блока */
+    text-overflow: ellipsis;
+}
+.ImgCard {
+     width: 100%;
+     max-width: 250px;
+     padding: 5px;
+}
+@media screen and (max-width: 1570px) {
+     .conteiner {
+          grid-template-columns: repeat(4, 1fr);
+          grid-template-rows: repeat(1, auto);
+          gap: 5px;
+     }
+     .ImgCard {
+          width: 100%;
+          max-width: 200px;
+          padding: 5px;
+     }
+}
+@media screen and (max-width: 1185px) {
+     .conteiner {
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(1, auto);
+     }
+     .ImgCard {
+     width: 100%;
+          max-width: 150px;
+          padding: 5px;
+     }
+     .href{
+          text-decoration: none;
+          color: aliceblue;
+          font-size: 18px;
+          
+     }
+}
+@media screen and (max-width: 550px) {
+     .conteiner {
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(1, auto);
+     }
+     .ImgCard {
+          width: 100%;
+          max-width: 130px;
+          padding: 5px;
+     }
+}

@@ -1,0 +1,168 @@
+.mmain {
+     display: inline-block;
+     text-align: justify;
+     width: 70%;
+     background-color: rgba(0, 0, 0, 0.5);
+}
+.head_chocolate{
+     display: inline-block;
+     width: 100%;
+}
+.head_img {
+     width: 100%;
+     max-width: 250px;
+     float: left;
+     border: solid black;
+     margin: 20px 15px 20px 30px;
+     
+}
+
+.head_text {
+     display: inline-block;
+
+}
+
+.info-grid {
+     text-decoration: none;
+     width: 25%;
+     float: right;
+}
+
+.info-chocolate {
+     list-style: none;
+     padding: 10px 10px 10px 10px;
+     color: rgb(226, 155, 156);
+     text-align: left;
+     font-size: 22px;
+}
+.info-chocolate>li>h3 {
+     margin: 10px 0 10px 0;
+}
+ul {
+     background-color: rgba(36, 36, 36, 0.2);
+}
+.description{
+     margin: 30px;
+     padding: 20px;
+     background-color: rgba(0, 0, 0, 0.9);
+}
+.description>span{
+     font-size: 32px;
+}
+.conteiner-changeImage{
+     text-align: center;
+}
+.changeImage{
+     margin: 30px;
+     display: inline-block;
+}
+.changeImage {
+     display: grid;
+     grid-template-columns: 5% auto 5%;
+     position: relative;
+     text-align: center;
+     justify-content: center; /* Центрирование по горизонтали */
+     align-items: center; /* Центрирование по вертикали */
+   
+ }
+ 
+ #myImage {
+     width: 100%;
+ }
+ 
+ #imageInfo {
+     position: absolute;
+     top: 95%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     background-color: rgba(0, 0, 0, 0.794);
+ }
+ 
+ .button {
+     text-align: center;
+     font-size: 90px;
+     display: inline-block;
+     height: 100%;
+     padding: 0%;
+     border: 0cap;
+     background-color: rgba(255, 255, 255, 0);
+     color: rgb(226, 155, 156);
+ }
+ .button:hover{
+     color: rgb(255, 97, 100);
+     background-color: rgba(0, 0, 0, 0.555);
+ }
+
+ @media screen and (max-width: 1150px) {
+     .button {
+          font-size: 80px;
+     }
+     .info-chocolate {
+          list-style: none;
+          padding: 10px 10px 10px 10px; 
+          margin: 0 20px 0 20px;
+     }
+     .info-grid {
+          display: grid;
+          text-decoration: none;
+          float: none;
+          width: auto;
+     }
+     .navi-bar,
+     .mmain {
+          width: 100%;
+     }
+     .head_text>h1{
+          display: block;
+          margin: 20px 20px 0 20px;
+     }
+     .head_text>h2{
+          display: block;
+          margin: 0px 20px 0 20px;
+     }
+ }
+ @media screen and (max-width: 890px) {
+     .button {
+          font-size: 70px;
+     }
+ }
+ @media screen and (max-width: 800px) {
+     .button {
+          font-size: 60px;
+     }
+ }
+ @media screen and (max-width: 770px) {
+
+     .navi-bar,
+     .mmain {
+          width: 100%;
+     }
+     .description>span{
+          font-size: 26px;
+     }
+}
+ @media screen and (max-width: 700px) {
+     .button {
+          font-size: 50px;
+     }
+ }
+ @media screen and (max-width: 550px) {
+     .button {
+          font-size: 40px;
+     }
+     .description>span{
+          font-size: 20px;
+     }
+ }
+ @media screen and (max-width: 450px) {
+     .button {
+          font-size: 30px;
+     }
+ }
+ @media screen and (max-width: 375px) {
+     .button {
+          font-size: 20px;
+     }
+ }
+
+ 
